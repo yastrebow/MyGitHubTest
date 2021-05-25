@@ -8,31 +8,31 @@ public class MyCalculatorTest {
 
     @Before
     public void setUp() {
-        a = 11;
+        a = 9;
         b = 7;
     }
 
     @Test
     public void testAdd() {
-        int result = 18;
-        Assert.assertEquals("11 + 7 must be equal 18", result, MyCalculator.addition(a, b));
+        int result = 16;
+        Assert.assertEquals("9 + 7 must be equal 16", result, MyCalculator.add(a, b));
     }
 
     @Test
     public void testSub() {
-        int result = 4;
-        Assert.assertEquals("11 - 7 must be equal 4", result, MyCalculator.subtraction(a, b));
+        int result = 2;
+        Assert.assertEquals("9 - 7 must be equal 2", result, MyCalculator.sub(a, b));
     }
 
     @Test
     public void testMulti() {
-        int result = 77;
-        Assert.assertEquals("11 * 7 must be equal 18", result, MyCalculator.multiplication(a, b));
+        int result = 63;
+        Assert.assertEquals("9 * 7 must be equal 63", result, MyCalculator.mult(a, b));
     }
 
     @Test
     public void testDiv() {
-        float result = 1.5714f;
-       Assert.assertEquals("11 / 7 must be equal about 1.5714", result, MyCalculator.divide(a, b), 0.0001);
+        float result = 1.2857f;
+       Assert.assertEquals("9 / 7 must be equal about 1.2857", result, MyCalculator.div(a, b), 0.0001);
     }
 }
