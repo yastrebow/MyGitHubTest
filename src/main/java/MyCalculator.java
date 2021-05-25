@@ -8,7 +8,7 @@ public class MyCalculator {
         return x-y;
     }
 
-    public static int multi(int x, int y) {
+    public static int mult(int x, int y) {
         return x*y;
     }
 

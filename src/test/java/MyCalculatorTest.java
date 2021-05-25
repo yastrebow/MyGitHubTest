@@ -25,9 +25,9 @@ public class MyCalculatorTest {
     }
 
     @Test
-    public void testMulti() {
+    public void testMult() {
         int result = 77;
-        Assert.assertEquals("11 * 7 must be equal 18", result, MyCalculator.multi(n, m));
+        Assert.assertEquals("11 * 7 must be equal 18", result, MyCalculator.mult(n, m));
     }
 
     @Test
