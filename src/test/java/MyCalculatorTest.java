@@ -3,36 +3,36 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class MyCalculatorTest {
-    int a;
-    int b;
+    int m;
+    int n;
 
     @Before
     public void setUp() {
-        a = 9;
-        b = 7;
+        m = 15;
+        n = 3;
     }
 
     @Test
     public void testAdd() {
-        int result = 16;
-        Assert.assertEquals("9 + 7 must be equal 16", result, MyCalculator.add(a, b));
+        int result = 18;
+        Assert.assertEquals("15 + 3 must be equal 18", result, MyCalculator.add(m, n));
     }
 
     @Test
     public void testSub() {
-        int result = 2;
-        Assert.assertEquals("9 - 7 must be equal 2", result, MyCalculator.sub(a, b));
+        int result = 12;
+        Assert.assertEquals("15 - 3 must be equal 12", result, MyCalculator.sub(m, n));
     }
 
     @Test
     public void testMulti() {
-        int result = 63;
-        Assert.assertEquals("9 * 7 must be equal 63", result, MyCalculator.mult(a, b));
+        int result = 45;
+        Assert.assertEquals("15 * 3 must be equal 45", result, MyCalculator.mult(m, n));
     }
 
     @Test
     public void testDiv() {
-        float result = 1.2857f;
-       Assert.assertEquals("9 / 7 must be equal about 1.2857", result, MyCalculator.div(a, b), 0.0001);
+        float result = 5.0000f;
+       Assert.assertEquals("15 / 3 must be equal about 5", result, MyCalculator.div(m, n), 0.0001);
     }
 }
